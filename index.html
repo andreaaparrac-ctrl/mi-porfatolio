@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+
+    <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito
+                        <span id="cart-count" class="badge bg-danger">0</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </header>
+
+    <!-- CARRUSEL -->
+    <section>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://p2.piqsels.com/preview/132/324/894/water-droplet-art-black.jpg" class="d-block w-100" alt="Agua">
+                <div class="carousel-caption">
+                    <h1>Pureza en cada gota</h1>
+                    <p>Agua fresca y natural</p>
+                    <a href="#productos" class="btn btn-info text-white">Ver productos</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://p0.piqsels.com/preview/969/581/288/water-splash-abstract-aqua.jpg" class="d-block w-100" alt="Hidratación">
+                <div class="carousel-caption">
+                    <h1>Hidratación natural</h1>
+                    <p>Calidad y frescura garantizada</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://p2.piqsels.com/preview/259/697/299/splashing-splash-spoon-aqua.jpg" class="d-block w-100" alt="Bienestar">
+                <div class="carousel-caption">
+                    <h1>Agua para tu bienestar</h1>
+                    <p>La mejor calidad para tu hogar</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container mt-5">
+
+        <h1 class="text-center mb-4">Productos Destacados</h1>
+
+        <!-- GRID DE PRODUCTOS -->
+        <section class="row mt-4">
+
+    <article class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-secondary bg-dark text-white">
+            <img src="assets/img/bidon.jpg" 
+                 class="card-img-top" alt="Bidon 20L" style="height: 250px; object-fit: contain;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-info">Bidón 20L</h5>
+                <p class="card-text fs-4 fw-bold">$3.000</p>
+                <button class="btn btn-info text-white w-100 btn-add">Agregar al carrito</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-secondary bg-dark text-white">
+            <img src="assets/img/pack-botellas.jpg" 
+                 class="card-img-top" alt="Producto 2" style="height: 250px; object-fit: contain;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-info">Pack Botellas 500ml</h5>
+                <p class="card-text fs-4 fw-bold">$3.000</p>
+                <button class="btn btn-info text-white w-100 btn-add">Agregar al carrito</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="col-md-4 mb-4">
+        <div class="card h-100 shadow border-secondary bg-dark text-white">
+            <img src="assets/img/Dispensador.jpg" 
+                 class="card-img-top" alt="Producto 3" style="height: 250px; object-fit: contain;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-info">Dispensador Basico</h5>
+                <p class="card-text fs-4 fw-bold">$6.500</p>
+                <button class="btn btn-info text-white w-100 btn-add">Agregar al carrito</button>
+            </div>
+        </div>
+    </article>
+
+</section>
+
+    </main>
+    <section class="bg-dark text-white py-5 border-top border-secondary">
+      <div class="container">
+            <div class="row">
+
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info mb-3">Encuéntranos</h5>
+                    <p class="mb-2">📍 Cardonal Sitio 2 lote 1, Pelluhue</p>
+                    <p class="mb-2">📞 +56 9 75300452</p>
+                    <p class="mb-2">✉ ecommerce@fuentedevida.cl</p>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info mb-3">Nuestra empresa</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Quiénes somos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Calidad certificada</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Cotizar para empresa</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-info mb-3">Servicio al cliente</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Contáctanos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Seguimiento de compra</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Términos y condiciones</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Política de reembolso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-dark text-white py-4 border-top border-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-1">© 2026 Fuente de Vida - Todos los derechos reservados</p>
+                <p class="small text-info mb-0">📍 Pelluhue, Región del Maule, Chile</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/js/script.js"></script>
+    
+<button type="button" id="btn-back-to-top" class="btn btn-info btn-lg rounded-circle shadow text-white">
+    ↑
+</button>
+</body>
+</html>

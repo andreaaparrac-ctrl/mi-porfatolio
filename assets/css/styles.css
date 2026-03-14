@@ -1,0 +1,60 @@
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+    /* Efecto para el contador */
+#cart-count {
+    display: inline-block;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+    /* RESPONSIVIDAD */
+@media (max-width: 420px) {
+    .carousel-item img { height: 50vh; }
+    .carousel-caption h1 { font-size: 1.4rem; }
+    h1 { font-size: 1.8rem; }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item img { height: 85vh; }
+    .card:hover { transform: translateY(-10px); transition: 0.3s; }
+}
+.carousel-item img{
+    height:420px;
+    object-fit: cover;
+}
+.carousel-caption h1, 
+.carousel-caption p {
+    color: #ffffff; /* Asegura que sean blancas */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Crea un contorno oscuro */
+}
+.carousel-item img {
+    filter: brightness(0.6); /* Reduce el brillo al 60% */
+}
+body{
+    background-color: #e3f2fd;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Se activa con JS */
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* Ajuste para móviles (≤ 420px) */
+@media (max-width: 420px) {
+    #btn-back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
