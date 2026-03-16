@@ -31,8 +31,9 @@
     color: #ffffff; 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
+/* Reduce el brillo al 60% */
 .carousel-item img {
-    filter: brightness(0.6); /* Reduce el brillo al 60% */
+    filter: brightness(0.6);
 }
 
 /* FONDO DEL BODY */
